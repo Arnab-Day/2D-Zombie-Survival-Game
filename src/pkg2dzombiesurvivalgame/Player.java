@@ -1,15 +1,18 @@
 package pkg2dzombiesurvivalgame;
 
-public class Player {
-    int x;
-    int y;
-    int health;
-    int speed;
+import java.awt.Color;
+import java.awt.Graphics;
 
-    public Player() {
-        x = 400;
-        y = 300;
-        health = 100;
-        speed = 5;
+public class Player {
+    int x = 400;
+    int y = 300;
+    int health = 100;
+    int speed = 5;
+    int width = 40;
+    int height = 40;
+
+    public void draw(Graphics g) {
+        g.setColor(Color.BLUE);
+        g.fillRect(x, y, width, height);
     }
 }

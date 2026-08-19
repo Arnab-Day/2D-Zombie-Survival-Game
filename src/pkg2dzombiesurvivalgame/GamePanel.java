@@ -6,19 +6,21 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 
 public class GamePanel extends JPanel {
-    final int screenWidth = 800;
-    final int screenHeight = 600;
+    final int screenWidth = 800, screenHeight = 600;
+    Player player;
 
     public GamePanel() {
-        this.setPreferredSize(new Dimension(screenWidth, screenHeight));
-        this.setBackground(Color.BLACK);
-        this.setDoubleBuffered(true);
+        setPreferredSize(new Dimension(screenWidth, screenHeight));
+        setBackground(Color.BLACK);
+        setDoubleBuffered(true);
+        player = new Player();
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.setColor(Color.WHITE);
-        g.drawString("Zombie Survival Game", 350, 50);
+        g.drawString("Zombie Survival Game", 350, 30);
+        player.draw(g);
     }
 }
