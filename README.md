@@ -35,7 +35,7 @@ A simple 2D Zombie Survival Game developed in **Java Swing** as a university pro
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/Arnab-Day/2D-Zombie-Survival-Game.git
 ```
 
 2. Open the project in a Java IDE.
